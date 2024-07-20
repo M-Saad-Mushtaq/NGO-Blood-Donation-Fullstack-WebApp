@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Login</title>
+
+    <!-- bootstrap css -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Datatables css -->
+    <link href="Datatables/css/dataTables.dataTables.min.css" rel="stylesheet" />
+    <!-- fontawesome css -->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <!-- Custom css -->
+    <link href="Custom%20CSS/StyleSheet1.css" rel="stylesheet"/>
+    <link href="Custom%20CSS/footer.css" rel="stylesheet"/>
+    <link href="Custom%20CSS/Admin_Login.css" rel="stylesheet" />
+
+    <!-- bootstrap js -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+
+
+
+
+
+</head>
+   
+<body>
+    <form id="form1">
+        <div>
+            <nav class ="navbar navbar-expand-lg navbar-light">
+                <a class ="navbar-brand" id="n1" href ="index.html">
+                     <img id="n2" src="Images/blood.jpg"  width ="30" height ="20"/>
+                        BloodRush
+                 </a>
+
+                <!-- Minimize Function -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class ="nav-item active">
+                            <a class="nav-link btn" href="index.html"> Home </a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="staff_login.html" >Staff</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="patient.html">Patient Entry</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="admin_login.html">Admin</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="enterstaff.html">Staff Entry</a>
+                        </li>
+
+                        <li class ="nav-item active"> 
+                            <a Class ="nav-link btn" href="AddCenter.html">Add Center</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class ="navbar-nav">
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="Login.html">LOGIN</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="Signup.html">SIGN UP</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" id="signout">SIGN OUT</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="profileedit.html">Hello, User</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+      <div>
+         <div style="background-image: url('https://c4.wallpaperflare.com/wallpaper/200/845/250/red-balls-wallpaper-preview.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7; 
+            z-index: -1; 
+            ">
+
+         </div>
+
+         <div class="container">
+         <div class="row">
+         <div class="col-md-6 mx-auto">
+            <div class="card" id="card1">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col" style="text-align: center;">
+                        <img width="150" src="Images/admin.png"/>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col" style="text-align: center;">
+                        <h3>Admin Login</h3>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <hr>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <label>Admin ID</label>
+                        <div class="form-group">
+                           <input class="form-control" ID="id" name="id" placeholder="xxxxxx-xxxxxx-x">
+                        </div>
+                        <label>Password</label>
+                        <div class="form-group">
+                           <input class="form-control" ID="password" name="password" placeholder="Password" TextMode="Password">
+                        </div>
+                        <div class="form-group">
+                           <button class="btn btn-success btn-block btn-lg" ID="login">Login</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a href="index.html"><< Back to Home</a><br><br>
+         </div>
+         </div>
+         </div>
+        </div>
+
+
+        <div class="footer1">
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Us</h5>
+                        <p>We are committed to connecting donors and recipients for a better cause.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <p>
+                            <a href="index.html">Home</a> |
+                            <a href="Review.html">Reviews</a> |
+                            <a href="signup_staff.html">Sign Up</a> |
+                            <a href="About.html">About Developers</a> 
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <p><a href="mailto:info@bloodrush.com">Email: info@bloodrush.com</a></p>
+                        <p>Phone: (123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 BloodRush. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>

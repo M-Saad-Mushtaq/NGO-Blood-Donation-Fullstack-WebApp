@@ -1,0 +1,28 @@
+﻿.card {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#a1{
+        text-decoration: none; 
+        color: inherit;
+}
+
+    #a1:hover {
+        text-decoration: none;
+        color: inherit;
+        opacity: 0.8;
+    }
+
+#a2 {
+    text-decoration: none;
+    color: inherit;
+}
+
+    #a2:hover {
+        text-decoration: none;
+        color: inherit;
+        opacity: 0.8;
+    }

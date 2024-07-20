@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Info</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Custom CSS/Acceptor_Donor.css" rel="stylesheet">
+      <!-- bootstrap css -->
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <!-- Datatables css -->
+      <link href="Datatables/css/dataTables.dataTables.min.css" rel="stylesheet" />
+      <!-- fontawesome css -->
+      <link href="fontawesome/css/all.css" rel="stylesheet" />
+      <!-- Custom css -->
+      <link href="Custom%20CSS/StyleSheet1.css" rel="stylesheet"/>
+      <link href="Custom%20CSS/footer.css" rel="stylesheet"/>
+  
+      <!-- bootstrap js -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+      <script src="bootstrap/js/popper.min.js"></script>
+</head>
+
+<body>
+    <form id="form1">
+        <div>
+            <nav class ="navbar navbar-expand-lg navbar-light">
+                <a class ="navbar-brand" id="n1" href ="index.html">
+                     <img id="n2" src="Images/blood.jpg"  width ="30" height ="20"/>
+                        BloodRush
+                 </a>
+
+                <!-- Minimize Function -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class ="nav-item active">
+                            <a class="nav-link btn" href="index.html"> Home </a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="staff_login.html" >Staff</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="patient.html">Patient Entry</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="admin_login.html">Admin</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="enterstaff.html">Staff Entry</a>
+                        </li>
+
+                        <li class ="nav-item active"> 
+                            <a Class ="nav-link btn" href="AddCenter.html">Add Center</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class ="navbar-nav">
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="Login.html">LOGIN</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="Signup.html">SIGN UP</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" id="signout">SIGN OUT</a>
+                        </li>
+
+                        <li class ="nav-item active">
+                            <a Class ="nav-link btn" href="profileedit.html">Hello, User</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div>
+            <div style="background-image: url('https://c4.wallpaperflare.com/wallpaper/200/845/250/red-balls-wallpaper-preview.jpg'); 
+                background-size: cover; 
+                background-position: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.7; 
+                z-index: -1; 
+                ">
+
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <div class="card" id="card1">
+                                
+                                <div class="row">
+                                    <div class="col" style="text-align: center;">
+                                        <img width="150" src="Images/blood.jpg"/>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col" style="text-align: center;">
+                                        <h3>Blood Data</h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>CITY</label>
+                                            <div class="form-group">
+                                                <input class="form-control" ID="city" name="City" placeholder="City">
+                                            </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label>Blood Type</label>
+                                        <div class="form-group">
+                                            <select class="form-control" name="Blood-Type" id="bloodtype">
+                                                <option Value="">Select blood type</option>
+                                                <option Value="O+" > O+</option>
+                                                <option Value="O-" > O-</option>
+                                                <option Value="A+" > A+</option>
+                                                <option Value="A-" > A-</option>
+                                                <option Value="B+" > B+</option>
+                                                <option Value="B-" > B-</option>
+                                                <option Value="AB+"> AB+</option>
+                                                <option Value="AB-"> AB-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6" style="justify-content: center;text-align: center;justify-items: center;">              
+                                    <label>Patient Type</label>
+                                    <div class="form-group">
+                                        <select class="form-control" name="Patient-Type" id="patientType">
+                                            <option value="">Select</option>
+                                            <option value="Acceptor">Acceptor</option>
+                                            <option value="Donor">Donor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                    
+                                <br />
+                                        
+                                <div class="form-group">
+                                    <button class="btn btn-success btn-block btn-lg" ID="enter1">Enter</button>
+                                </div>
+
+                                <!--Following is the data that will be recieved from server-->
+
+                                <!--table for donor-->
+                                <div>
+                                    <table id="myTable" class="gridview">
+                                        <thead>
+                                            <tr class="gridview-header">
+                                                <th>ID</th>
+                                                <th>Address</th>
+                                                <th>City</th>
+                                                <th>Facilities</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Sample data rows, replace these with dynamic content as needed -->
+                                            <tr class="gridview-row">
+                                                <td>1</td>
+                                                <td>123 Main St</td>
+                                                <td>Springfield</td>
+                                                <td>Pool, Gym</td>
+                                            </tr>
+                                            <tr class="gridview-alternating-row">
+                                                <td>2</td>
+                                                <td>456 Elm St</td>
+                                                <td>Shelbyville</td>
+                                                <td>WiFi, Parking</td>
+                                            </tr>
+                                            <tr class="gridview-row">
+                                                <td>3</td>
+                                                <td>789 Oak St</td>
+                                                <td>Capital City</td>
+                                                <td>Breakfast, Gym</td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                        <tfoot>
+                                            <tr class="gridview-pager">
+                                                <td colspan="4">
+                                                    <!-- Pagination controls go here -->
+                                                    <a href="#">« Previous</a> | <a href="#">Next »</a>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+
+                                <!--table for acceptor-->
+                                <div>
+                                    <table id="myTable" class="gridview">
+                                        <thead>
+                                            <tr class="gridview-header">
+                                                <th>ID</th>
+                                                <th>Address</th>
+                                                <th>City</th>
+                                                <th>Facilities</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Sample data rows, replace these with dynamic content as needed -->
+                                            <tr class="gridview-row">
+                                                <td>1</td>
+                                                <td>123 Main St</td>
+                                                <td>Springfield</td>
+                                                <td>Pool, Gym</td>
+                                            </tr>
+                                            <tr class="gridview-alternating-row">
+                                                <td>2</td>
+                                                <td>456 Elm St</td>
+                                                <td>Shelbyville</td>
+                                                <td>WiFi, Parking</td>
+                                            </tr>
+                                            <tr class="gridview-row">
+                                                <td>3</td>
+                                                <td>789 Oak St</td>
+                                                <td>Capital City</td>
+                                                <td>Breakfast, Gym</td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                        <tfoot>
+                                            <tr class="gridview-pager">
+                                                <td colspan="4">
+                                                    <!-- Pagination controls go here -->
+                                                    <a href="#">« Previous</a> | <a href="#">Next »</a>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+
+                                <br />
+
+                                <!-- <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" ID="centerId" name="center-ID" placeholder="Enter Center ID">
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <div class="row" id="select">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="cityDropdown">Select City:</label>
+                                            <select id="cityDropdown">
+                                                <!-- Options will be populated dynamically using JavaScript -->
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6" style="float: right;">
+                                        <div class="form-group">
+                                            <button class="btn btn-success btn-block btn-lg" ID="enter2">Book Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="footer1">
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Us</h5>
+                        <p>We are committed to connecting donors and recipients for a better cause.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <p>
+                            <a href="index.html">Home</a> |
+                            <a href="Review.html">Reviews</a> |
+                            <a href="signup_staff.html">Sign Up</a> |
+                            <a href="About.html">About Developers</a> 
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <p><a href="mailto:info@bloodrush.com">Email: info@bloodrush.com</a></p>
+                        <p>Phone: (123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 BloodRush. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var table = document.getElementById("myTable");
+            var cities = new Set();
+    
+            // Iterate through table rows (skip header and footer)
+            for (var i = 1; i < table.rows.length - 1; i++) {
+                var city = table.rows[i].cells[2].textContent.trim(); // Assuming City column is the third column (index 2)
+                cities.add(city);
+            }
+    
+            var dropdown = document.getElementById("cityDropdown");
+    
+            // Add options to dropdown
+            cities.forEach(function(city) {
+                var option = document.createElement("option");
+                option.text = city;
+                dropdown.add(option);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿#card1 {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+#und1:hover{
+    text-decoration:none;
+}
+
+#und2:hover {
+    text-decoration: none;
+}

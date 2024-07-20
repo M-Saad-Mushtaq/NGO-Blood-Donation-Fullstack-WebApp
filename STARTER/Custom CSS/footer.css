@@ -1,0 +1,25 @@
+.footer1 {
+    background-color: #f8f9fa; 
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #c9302c; 
+
+    transform: translateY(70%);
+    transition: transform 0.3s ease-in-out;
+}
+
+    .footer1 a {
+        color: #333; 
+        text-decoration: none;
+        margin: 0 10px; 
+    }
+
+        .footer1 a:hover {
+            color: #808080; 
+        }
+
+
+.btn:hover {
+    color: #808080; 
+    border-bottom: 2px solid black;
+}
