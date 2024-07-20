@@ -1,0 +1,72 @@
+﻿#card1 {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#select {
+    display: inline-block;
+}
+
+/* Hide the default radio button */
+/*.form-check-input[type="radio"] {
+    display: none;
+}*/
+
+    /* Style the custom radio button */
+    /*.form-check-input[type="radio"] + .form-check-label::before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 1px solid black;
+        margin-right: 10px;
+    }*/
+
+    /* Style the custom radio button when selected */
+    /*.form-check-input[type="radio"]:checked + .form-check-label::before {
+        background-color: #ff5252;*/ /* Change color to blue */
+    /*}*/
+
+/*GRID VIEW*/
+.gridview {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.gridview-header {
+    background-color: #c9302c;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+
+.gridview-row {
+    border-bottom: 1px solid #ddd;
+}
+
+
+.gridview-alternating-row {
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.gridview td, .gridview th {
+    padding: 10px;
+}
+
+
+.gridview-pager {
+    text-align: center;
+    padding: 10px;
+}

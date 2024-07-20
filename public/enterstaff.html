@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enter Staff</title>
+
+    <!-- bootstrap css -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom css -->
+    <link href="Custom%20CSS/StyleSheet1.css" rel="stylesheet"/>
+    <link href="Custom%20CSS/footer.css" rel="stylesheet"/>
+    <link href="Custom%20CSS/entrydata.css" rel="stylesheet" />
+
+    <!-- bootstrap js -->
+      <script src="/Blood/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+
+
+
+
+
+</head>
+   
+<body>
+    <form id="form1">
+      <div>
+         <nav class ="navbar navbar-expand-lg navbar-light">
+             <a class ="navbar-brand" id="n1" href ="index.html">
+                  <img id="n2" src="Images/blood.jpg"  width ="30" height ="20"/>
+                     BloodRush
+              </a>
+
+             <!-- Minimize Function -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                 <ul class="navbar-nav mr-auto">
+                     <li class ="nav-item active">
+                         <a class="nav-link btn" href="index.html"> Home </a>
+                     </li>
+
+                     <li class ="nav-item active">
+                         <a Class ="nav-link btn" href="staff_login.html" id="staff-login">Staff</a>
+                     </li>
+
+                     <li class ="nav-item active">
+                         <a Class ="nav-link btn" href="patient.html" id="patient-entry">Patient Entry</a>
+                     </li>
+
+                     <li class ="nav-item active">
+                         <a Class ="nav-link btn" href="admin_login.html" id="admin-login">Admin</a>
+                     </li>
+
+                     <li class ="nav-item active">
+                         <a Class ="nav-link btn" href="enterstaff.html" id="enter-staff">Staff Entry</a>
+                     </li>
+
+                     <li class ="nav-item active"> 
+                         <a Class ="nav-link btn" href="AddCenter.html" id="add-center">Add Center</a>
+                     </li>
+
+                 </ul>
+
+                 <ul class ="navbar-nav">
+                     <li class ="nav-item active">
+                         <a Class ="nav-link btn" href="Login.html" id="nav-login">LOGIN</a>
+                     </li>
+
+                     <li class ="nav-item active">
+                         <a Class ="nav-link btn" href="Signup.html" id="nav-signup">SIGN UP</a>
+                     </li>
+
+                     <li class ="nav-item active">
+                         <a Class ="nav-link btn" id="signout">SIGN OUT</a>
+                     </li>
+
+                     <li class ="nav-item active">
+                         <a Class ="nav-link btn" href="profileedit.html" id="profile-edit">Hello, User</a>
+                     </li>
+
+                 </ul>
+             </div>
+         </nav>
+     </div>
+
+
+        <divs>
+         <div style="background-image: url('https://c4.wallpaperflare.com/wallpaper/200/845/250/red-balls-wallpaper-preview.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7; 
+            z-index: -1; 
+            ">
+   
+         </div>
+
+         <div class="container">
+         <div class="row">
+         <div class="col-md-6 mx-auto">
+            <div class="card" id="card1">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col" style="text-align: center;">
+                        <img width="200" src="https://img.freepik.com/premium-vector/cute-little-student-boy-with-laptop-computer-notebook-vector-illustration-design_1142-104227.jpg"/>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col" style="text-align: center;">
+                        <h3>Staff Entry</h3>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <hr>
+                     </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-md-6">
+                        <label>Center ID</label>
+                        <div class="form-group">
+                           <input class="form-control" ID="centerId" name="centerId" placeholder="Center ID">
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <label>Full Name</label>
+                        <div class="form-group">
+                           <input class="form-control" ID="name" name="name" placeholder="Full Name">
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <label>Date of Birth</label>
+                        <div class="form-group">
+                           <input class="form-control" ID="birthdate" name="birthdate"  placeholder="BirthDate" type="Date">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-md-6">
+                        <label>CNIC</label>
+                        <div class="form-group">
+                           <input class="form-control" ID="cnic" name="cnic" placeholder="CNIC">
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <label>Contact No</label>
+                        <div class="form-group">
+                           <input class="form-control" ID="contactNo" name="contactNo" placeholder="Contact No" TextMode="Number">
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <label>Email</label>
+                        <div class="form-group">
+                           <input class="form-control" ID="email" name="email" placeholder="Email" TextMode="Email">
+                        </div>
+                     </div>
+                        <div class="col-md-6">
+                           <label>Gender</label>
+                              <div class="form-group">
+                                 <select class="form-control" name="gender" id="gender">
+                                 <option value="">Select</option>
+                                 <option value="Male">Male</option>
+                                 <option value="Female">Female</option>
+                                 </select>
+                              </div>
+                        </div>
+                  </div>
+                     
+                  <div class="row">
+                     <div class="col">
+                        <label>Full Address</label>
+                        <div class="form-group">
+                           <input class="form-control" ID="address" name="address" placeholder="Full Address" TextMode="MultiLine" Rows="2">
+                        </div>
+                     </div>
+                  </div>
+                     <hr />
+
+                     <!-- PASSWORD -->
+                     <div class="col-md-6">
+                        <label>Create Password</label>
+                        <div class="form-group">
+                           <input class="form-control" ID="password" name="password" placeholder="Create Passwword" type="Password">
+                        </div>
+                     </div>
+
+                     <div class="form-group">
+                           <button class="btn btn-success btn-block btn-lg" ID="enter">Enter</button>
+                     </div>
+         </div>
+         </div>
+               <a href="index.html"><< Back to Home</a><br><br>
+            </div>
+         </div>
+         </div>
+        </div>
+
+
+        <div class="footer1">
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Us</h5>
+                        <p>We are committed to connecting donors and recipients for a better cause.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <p>
+                            <a href="index.html">Home</a> |
+                            <a href="Review.html">Reviews</a> |
+                            <a href="signup_staff.html">Sign Up</a> |
+                            <a href="About.html">About Developers</a> 
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <p><a href="mailto:info@bloodrush.com">Email: info@bloodrush.com</a></p>
+                        <p>Phone: (123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 BloodRush. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+
+    <script src="Custom-js/script.js"></script>
+    <script src="Custom-js/staffSignup.js"></script>
+
+
+</body>
+</html>
